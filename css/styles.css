@@ -1,0 +1,96 @@
+/* 
+Універсальний селектор
+Селектор тега (елемента)
+Селектор id
+Селектор класа
+Селектор атрибута
+Селектор нащадка
+Дочірній селектор
+*/
+
+/* Універсальний селектор */
+/* * {
+  color: teal;
+} */
+
+/* Селектор тега (елемента) */
+/* h1 {
+  color: teal;
+}
+
+p {
+  color: tomato;
+}
+
+button {
+  cursor: pointer;
+} */
+
+/* Селектор id */
+/* #description,
+#secondary-description {
+  color: teal;
+} */
+
+/* Селектор класа */
+/* .text {
+  color: tomato;
+} */
+
+/* Селектор атрибута */
+/* [href="https://www.google.com/"]
+{
+  color: teal;
+} */
+
+/* Селектор нащадка */
+/* .menu-link {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.menu .menu-link {
+  color: teal;
+}
+
+.secondary-menu .menu-link {
+  color: tomato;
+} */
+
+/* Дочірній селектор */
+/* .menu > .menu-item {
+  background-color: tomato;
+} */
+
+/* 100 */
+/* #main-title {
+  color: teal;
+} */
+
+/* 1 */
+/* h1 {
+  color: yellowgreen;
+} */
+
+/* 10 */
+/* .title {
+  color: tomato;
+} */
+
+/* 11 */
+/* body > .title {
+  color: aqua;
+} */
+
+/* body {
+  font-size: 28px;
+  color: teal;
+}
+
+.text {
+  color: yellowgreen;
+}
+
+.menu-link {
+  color: teal;
+} */

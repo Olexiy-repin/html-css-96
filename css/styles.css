@@ -1,0 +1,222 @@
+/* ============= VARIABLES ============= */
+:root {
+  --primary-color: #111111;
+  --secondary-color: #ffffff;
+  --accent-color: #fd9222;
+}
+/* ============= /VARIABLES ============= */
+
+/* ============= COMMON STYLES ============= */
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+/* ============= /COMMON STYLES ============= */
+
+/* ================ COMPONENTS ================ */
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.72px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+/* ================ /COMPONENTS ================ */
+
+/* ============= PAGE HEADER ============= */
+.logotype {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(20 / 18);
+  letter-spacing: -0.03em;
+  color: var(--primary-color);
+}
+
+.menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+/* ============= /PAGE HEADER ============= */
+
+/* ================ HERO ================ */
+.main-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  /* color: var(--secondary-color); */
+}
+
+.buy-now-btn {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.buy-now-btn:hover,
+.buy-now-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--accent-color);
+}
+
+.how-made-link {
+  font-size: 14px;
+  font-weight: 600;
+  /* color: var(--secondary-color); */
+}
+
+.how-made-link:hover,
+.how-made-link:focus {
+  color: var(--accent-color);
+}
+
+.scroll-down-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.42px;
+  /* color: var(--secondary-color); */
+}
+
+.scroll-down-link:hover,
+.scroll-down-link:focus {
+  color: var(--accent-color);
+}
+/* ================ /HERO ================ */
+
+/* ================ BENEFITS ================ */
+.benefits-list-title {
+  font-size: 18px;
+  font-weight: 600;
+  /* color: var(--secondary-color); */
+}
+
+.benefits-list-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  /* color: rgba(255, 255, 255, 0.7); */
+}
+/* ================ /BENEFITS ================ */
+
+/* ================ INGREDIENTS ================ */
+.ingredients-list-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  /* color: var(--secondary-color); */
+}
+/* ================ /INGREDIENTS ================ */
+
+/* ================ HOW MADE ================ */
+.how-made-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: var(--primary-color);
+}
+
+.how-made-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  color: var(--primary-color);
+}
+/* ================ /HOW MADE ================ */
+
+/* ================ PRODUCTS ================ */
+.products-list-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.products-list-ingredient {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: -0.24px;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.products-list-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+/* ================ /PRODUCTS ================ */
+
+/* ================ BESTSELLERS ================ */
+.bestsellers-list-caption {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  color: var(--text-color-theme-light);
+}
+/* ================ /BESTSELLERS ================ */
+
+/* ================ REVIEWS ================ */
+.reviews-list-fullname {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--text-color-theme-light);
+}
+
+.reviews-list-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.leave-review-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color-theme-light);
+}
+
+.leave-review-btn:hover,
+.leave-review-btn:focus {
+  color: var(--text-color-theme-dark);
+  background-color: var(--accent-color);
+}
+/* ================ /REVIEWS ================ */

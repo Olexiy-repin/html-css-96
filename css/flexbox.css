@@ -48,9 +48,12 @@ ol {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 20px;
+  /* flex-wrap: wrap; */
+  align-content: stretch;
+  /* column-gap: 40px;
+  row-gap: 20px; */
+
+  height: 400px;
 
   border: 1px solid #000000;
 }
@@ -60,5 +63,18 @@ ol {
 }
 
 .benefits-list-item {
+  /* flex-basis: 300px; */
   width: 300px;
+}
+
+.benefits-list-item-first {
+  align-self: flex-end;
+}
+
+.benefits-list-item-second {
+  align-self: center;
+}
+
+.benefits-list-item-third {
+  align-self: flex-start;
 }

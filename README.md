@@ -1,1 +1,1 @@
-# html-css-96
+# master_of_science_html_css

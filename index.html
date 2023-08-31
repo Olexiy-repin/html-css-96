@@ -24,13 +24,14 @@
         <nav class="page-navigation">
           <a class="logotype link" href="./index.html">
             <em>simply</em>&nbsp;chocolate
-            <img
+            <svg
               class="logotype-icon"
-              src="./images/icons/logo.svg"
-              alt="simply chocolate logotype"
               width="24"
               height="24"
-            />
+              aria-label="simply chocolate logotype"
+            >
+              <use href="./images/icons/sprite.svg#icon-logo"></use>
+            </svg>
           </a>
           <ul class="menu list">
             <li class="menu-item">
@@ -47,33 +48,39 @@
         <ul class="social-list list">
           <li class="social-list-item">
             <a class="social-list-link" href="">
-              <img
+              <svg
                 class="social-list-icon"
-                src="./images/icons/fecebook.svg"
-                alt="facebook icon"
                 width="24"
                 height="24"
-            /></a>
+                aria-label="facebook icon"
+              >
+                <use href="./images/icons/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-list-item">
             <a class="social-list-link" href="">
-              <img
+              <svg
                 class="social-list-icon"
-                src="./images/icons/instagram.svg"
-                alt="instagram icon"
                 width="24"
                 height="24"
-            /></a>
+                aria-label="instagram icon"
+              >
+                <use href="./images/icons/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-list-item">
             <a class="social-list-link" href="">
-              <img
+              <svg
                 class="social-list-icon"
-                src="./images/icons/twitter.svg"
-                alt="twitter icon"
                 width="24"
                 height="24"
-            /></a>
+                aria-label="twitter icon"
+              >
+                <use href="./images/icons/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -378,37 +385,63 @@
           <ul class="bestsellers-list list">
             <li class="bestsellers-list-item">
               <a href="#" class="bestsellers-list-link link">
-                <img
-                  class="bestsellers-list-img"
-                  src="./images/bestsellers/chocolate-with-nuts.jpg"
-                  alt="chocolate with nuts"
-                  width="368"
-                  height="464"
-                />
+                <div class="bestsellers-list-img-wrapper">
+                  <img
+                    class="bestsellers-list-img"
+                    src="./images/bestsellers/chocolate-with-nuts.jpg"
+                    alt="chocolate with nuts"
+                    width="368"
+                    height="464"
+                  />
+                  <p class="overlay">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
                 <h3 class="bestsellers-list-caption">CHOCOLATE WITH NUTS</h3>
               </a>
             </li>
             <li class="bestsellers-list-item">
               <a href="#" class="bestsellers-list-link link">
-                <img
-                  class="bestsellers-list-img"
-                  src="./images/bestsellers/chocolate-with-fruits.jpg"
-                  alt="chocolate with fruits"
-                  width="368"
-                  height="464"
-                />
+                <div class="bestsellers-list-img-wrapper">
+                  <img
+                    class="bestsellers-list-img"
+                    src="./images/bestsellers/chocolate-with-fruits.jpg"
+                    alt="chocolate with fruits"
+                    width="368"
+                    height="464"
+                  />
+                  <p class="overlay">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+
                 <h3 class="bestsellers-list-caption">CHOCOLATE WITH FRUITS</h3>
               </a>
             </li>
             <li class="bestsellers-list-item">
               <a href="#" class="bestsellers-list-link link">
-                <img
-                  class="bestsellers-list-img"
-                  src="./images/bestsellers/dark-chocolate.jpg"
-                  alt="dark chocolate"
-                  width="368"
-                  height="464"
-                />
+                <div class="bestsellers-list-img-wrapper">
+                  <img
+                    class="bestsellers-list-img"
+                    src="./images/bestsellers/dark-chocolate.jpg"
+                    alt="dark chocolate"
+                    width="368"
+                    height="464"
+                  />
+                  <p class="overlay">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+
                 <h3 class="bestsellers-list-caption">DARK CHOCOLATE</h3>
               </a>
             </li>

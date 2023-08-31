@@ -57,6 +57,11 @@ body {
   color: var(--accent-color);
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -76,9 +81,10 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.17;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 50px;
   color: var(--primary-color);
 }
 /* ================ /COMPONENTS ================ */
@@ -139,20 +145,56 @@ body {
   display: flex;
   column-gap: 14px;
 }
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+}
 /* ============= /PAGE HEADER ============= */
 
 /* ================ HERO ================ */
+.hero {
+  max-width: 1136px;
+  padding-top: 381px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  background: rgba(17, 17, 17, 0.6);
+}
+
 .main-title {
+  max-width: 470px;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
-  /* color: var(--secondary-color); */
+  margin-bottom: 32px;
+  color: var(--secondary-color);
+}
+
+.hero-bottom-block {
+  display: flex;
+  align-items: center;
 }
 
 .buy-now-btn {
+  min-width: 144px;
+  height: 45px;
   font-size: 14px;
   font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 14px;
+  border-radius: 100px;
+  border: none;
   background-color: var(--accent-color);
   color: var(--secondary-color);
 }
@@ -164,27 +206,50 @@ body {
 }
 
 .how-made-link {
+  display: flex;
+  align-items: center;
+  min-width: 183px;
+  height: 45px;
   font-size: 14px;
   font-weight: 600;
-  /* color: var(--secondary-color); */
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 100px;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .how-made-link:hover,
 .how-made-link:focus {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .scroll-down-link {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
-  letter-spacing: -0.42px;
-  /* color: var(--secondary-color); */
+  letter-spacing: -0.03em;
+  margin-left: auto;
+  color: var(--secondary-color);
 }
 
 .scroll-down-link:hover,
 .scroll-down-link:focus {
   color: var(--accent-color);
+}
+
+.scroll-down-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
 }
 /* ================ /HERO ================ */
 
@@ -228,21 +293,76 @@ body {
 /* ================ /BENEFITS ================ */
 
 /* ================ INGREDIENTS ================ */
+.ingredients-section-title {
+  max-width: 412px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 24px;
+}
+
+.ingredients-list-item {
+  flex-basis: calc((100% - 96px) / 4);
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-radius: 15px;
+  color: var(--text-color-theme-dark);
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+  background-color: var(--accent-color);
+}
+
+.ingredients-list-item:nth-child(even) {
+  background-color: #ffffff;
+  color: var(--text-color-theme-light);
+  outline: 1px solid var(--accent-color);
+}
+
+.ingredients-list-item:nth-child(4n - 1) {
+  background-color: #1e1823;
+}
+
+.ingredients-list-img {
+  margin-bottom: 32px;
+}
+
 .ingredients-list-title {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
-  /* color: var(--secondary-color); */
+  color: var(--secondary-color);
 }
 /* ================ /INGREDIENTS ================ */
 
 /* ================ HOW MADE ================ */
+.how-made-content-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.how-made-text-wrapper {
+  flex-grow: 1;
+  padding: 32px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
 .how-made-title {
+  max-width: 350px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 32px;
   color: var(--primary-color);
 }
 
@@ -250,18 +370,42 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.02em;
   color: var(--primary-color);
+}
+
+.how-made-list-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 /* ================ /HOW MADE ================ */
 
 /* ================ PRODUCTS ================ */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
+}
+
+.products-list-item {
+  flex-basis: calc((100% - 54px) / 4);
+  text-align: center;
+  padding: 32px 18px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: #ffffff;
+}
+
+.products-list-img {
+  margin-bottom: 8px;
+}
+
 .products-list-name {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: -0.36px;
   text-transform: uppercase;
+  margin-bottom: 2px;
   color: var(--primary-color);
 }
 
@@ -269,34 +413,77 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
-  letter-spacing: -0.24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
   color: rgba(17, 17, 17, 0.7);
 }
 
 .products-list-price {
+  display: inline-block;
+  min-width: 94px;
+  padding: 8px 16px;
   font-size: 14px;
   font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: #fafafa;
   color: var(--primary-color);
 }
 /* ================ /PRODUCTS ================ */
 
 /* ================ BESTSELLERS ================ */
+.bestsellers-list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.bestsellers-list-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
 .bestsellers-list-caption {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--text-color-theme-light);
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-radius: 0px 0px 15px 15px;
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: #ffffff;
+  color: var(--primary-color);
 }
 /* ================ /BESTSELLERS ================ */
 
 /* ================ REVIEWS ================ */
+.reviews-list {
+  display: flex;
+  column-gap: 28px;
+  margin-bottom: 50px;
+}
+
+.reviews-list-item {
+  width: calc((100% - 56px) / 3);
+  padding-top: 56px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0px 9.05px 100px 0px rgba(17, 17, 17, 0.03);
+}
+
 .reviews-list-fullname {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
   text-align: center;
+  margin-bottom: 24px;
   color: var(--text-color-theme-light);
 }
 
@@ -304,20 +491,29 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
 }
 
 .leave-review-btn {
+  display: block;
+  width: 222px;
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-color-theme-light);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 1px solid var(--accent-color);
+  color: var(--primary-color);
+  background-color: #ffffff;
 }
 
 .leave-review-btn:hover,
 .leave-review-btn:focus {
-  color: var(--text-color-theme-dark);
+  color: var(--secondary-color);
   background-color: var(--accent-color);
 }
 /* ================ /REVIEWS ================ */

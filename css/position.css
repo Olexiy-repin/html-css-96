@@ -34,13 +34,19 @@ body {
 }
 
 .blue {
+  position: relative;
+  z-index: 1;
   width: 100px;
   height: 100px;
   background-color: rgba(0, 0, 255, 0.5);
 }
 
 .yellow {
-  width: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
   height: 80px;
   background-color: #f1c40f;
 }

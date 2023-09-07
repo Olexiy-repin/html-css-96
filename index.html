@@ -672,5 +672,132 @@
         </nav>
       </div>
     </footer>
+
+    <!-- BACKDROP WITH MODAL WINDOW -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="close-btn">
+          <svg
+            class="close-btn-icon"
+            width="28"
+            height="28"
+            aria-label="modal close icon"
+          >
+            <use href="./images/icons/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="review-form-description">
+          leave a review about <span class="accent-color">our chocolate</span>
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                type="text"
+                id="user-name"
+                name="user_name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Oleksii"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="24"
+                height="24"
+                aria-label="user icon"
+              >
+                <use href="./images/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email"
+              >Email</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                type="email"
+                id="user-email"
+                name="user_email"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="24"
+                height="24"
+                aria-label="email icon"
+              >
+                <use href="./images/icons/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-phone"
+              >Phone number</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                type="tel"
+                id="user-phone"
+                name="user_phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg
+                class="review-form-field-icon"
+                width="24"
+                height="24"
+                aria-label="phone icon"
+              >
+                <use href="./images/icons/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment">
+              Comment
+            </label>
+            <textarea
+              class="review-form-comment"
+              name="user_comment"
+              id="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="review-form-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user_privacy"
+              value="true"
+              required
+            />
+            <label for="user-privacy" class="review-form-checkbox-label">
+              <span class="review-form-own-checkbox">
+                <svg
+                  class="review-form-own-checkbox-icon"
+                  width="10"
+                  height="9"
+                  aria-label="checkmark icon"
+                >
+                  <use href="./images/icons/sprite.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="review-form-privacy-link accent-color" href=""
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="review-form-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

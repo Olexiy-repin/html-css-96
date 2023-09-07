@@ -640,3 +640,201 @@ body {
   background-color: var(--accent-color);
 }
 /* ================ /REVIEWS ================ */
+
+/* ================ BACKDROP ================ */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+/* ================ /BACKDROP ================ */
+
+/* ================ MODAL WINDOW ================ */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 517px;
+  min-height: 794px;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: #fafafa;
+}
+
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  stroke: #111111;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  stroke: var(--accent-color);
+}
+
+.close-btn-icon {
+  transition: stroke 250ms ease-out;
+}
+/* ================ /MODAL WINDOW ================ */
+
+/* ================ MODAL FORM ================ */
+.review-form-description {
+  width: 298px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+.review-form-field-wrapper {
+  margin-bottom: 18px;
+}
+
+.review-form-field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  margin-bottom: 8px;
+}
+
+.review-form-input-wrapper {
+  position: relative;
+}
+
+.review-form-input {
+  width: 100%;
+  height: 68px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding-left: 62px;
+  transition: border-color 250ms ease-out;
+}
+
+.review-form-input:focus {
+  border-color: var(--accent-color);
+  outline: transparent;
+}
+
+.review-form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  stroke: #404040;
+  transition: stroke 250ms ease-out;
+}
+
+.review-form-input:focus + .review-form-field-icon {
+  stroke: var(--accent-color);
+}
+
+.review-form-comment {
+  width: 100%;
+  height: 137px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  resize: none;
+  transition: border-color 250ms ease-out;
+}
+
+.review-form-comment::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.review-form-comment:focus {
+  border-color: var(--accent-color);
+  outline: transparent;
+}
+
+.review-form-checkbox-wrapper {
+  margin-bottom: 40px;
+}
+
+.review-form-checkbox-label {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+
+.review-form-own-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  border-radius: 6px;
+  cursor: pointer;
+  fill: transparent;
+  margin-right: 12px;
+}
+
+.review-form-checkbox:checked
+  + .review-form-checkbox-label
+  > .review-form-own-checkbox {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.review-form-checkbox:focus
+  + .review-form-checkbox-label
+  > .review-form-own-checkbox {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.review-form-submit {
+  min-width: 117px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: none;
+  transition: color 250ms ease-out, background-color 250ms ease-out;
+}
+
+.review-form-submit:hover,
+.review-form-submit:focus {
+  color: var(--accent-color);
+  background-color: #fcf1e0;
+}
+/* ================ /MODAL FORM ================ */

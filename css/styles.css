@@ -221,6 +221,7 @@ body {
   border: none;
   background-color: var(--accent-color);
   color: var(--secondary-color);
+  transition: background-color 250ms ease-out, color 250ms ease-out;
 }
 
 .buy-now-btn:hover,
@@ -241,6 +242,7 @@ body {
   border-radius: 100px;
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
+  transition: border-color 250ms ease-out, color 250ms ease-out;
 }
 
 .how-made-link:hover,
@@ -259,6 +261,7 @@ body {
   letter-spacing: -0.03em;
   margin-left: auto;
   color: var(--secondary-color);
+  transition: color 250ms ease-out;
 }
 
 .scroll-down-link:hover,
@@ -274,6 +277,22 @@ body {
   height: 38px;
   border-radius: 50%;
   background-color: var(--secondary-color);
+  transition: background-color 250ms ease-out;
+}
+
+.scroll-down-link:hover .scroll-down-icon-wrapper,
+.scroll-down-link:focus .scroll-down-icon-wrapper {
+  background-color: var(--accent-color);
+}
+
+.scroll-down-icon {
+  fill: var(--accent-color);
+  transition: fill 250ms ease-out;
+}
+
+.scroll-down-link:hover .scroll-down-icon,
+.scroll-down-link:focus .scroll-down-icon {
+  fill: #ffffff;
 }
 /* ================ /HERO ================ */
 
@@ -298,6 +317,17 @@ body {
 
 .benefits-list-item {
   width: calc((100% - 176px) / 3);
+}
+
+.benefits-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 365px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
 }
 
 .benefits-list-title {
@@ -331,13 +361,14 @@ body {
 }
 
 .ingredients-list-item {
+  position: relative;
   flex-basis: calc((100% - 96px) / 4);
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 23px;
   padding-right: 23px;
   border-radius: 15px;
-  color: var(--text-color-theme-dark);
+  color: var(--secondary-color);
 }
 
 .ingredients-list-item:nth-child(4n + 1) {
@@ -346,12 +377,31 @@ body {
 
 .ingredients-list-item:nth-child(even) {
   background-color: #ffffff;
-  color: var(--text-color-theme-light);
+  color: var(--primary-color);
   outline: 1px solid var(--accent-color);
 }
 
 .ingredients-list-item:nth-child(4n - 1) {
   background-color: #1e1823;
+}
+
+.ingredients-list-link {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #fafafa;
+  stroke: #fafafa;
+}
+
+.ingredients-list-item:nth-child(even) .ingredients-list-link {
+  border-color: #fd9222;
+  stroke: #fd9222;
 }
 
 .ingredients-list-img {
@@ -364,7 +414,6 @@ body {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--secondary-color);
 }
 /* ================ /INGREDIENTS ================ */
 
@@ -521,6 +570,10 @@ body {
 /* ================ /BESTSELLERS ================ */
 
 /* ================ REVIEWS ================ */
+.reviews-section-title {
+  margin-bottom: 90px;
+}
+
 .reviews-list {
   display: flex;
   column-gap: 28px;
@@ -528,6 +581,7 @@ body {
 }
 
 .reviews-list-item {
+  position: relative;
   width: calc((100% - 56px) / 3);
   padding-top: 56px;
   padding-right: 24px;
@@ -537,6 +591,13 @@ body {
   border-radius: 15px;
   background: #ffffff;
   box-shadow: 0px 9.05px 100px 0px rgba(17, 17, 17, 0.03);
+}
+
+.reviews-list-avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .reviews-list-fullname {
@@ -570,6 +631,7 @@ body {
   border: 1px solid var(--accent-color);
   color: var(--primary-color);
   background-color: #ffffff;
+  transition: color 250ms ease-out, background-color 250ms ease-out;
 }
 
 .leave-review-btn:hover,

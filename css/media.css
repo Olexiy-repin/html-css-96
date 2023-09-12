@@ -1,0 +1,131 @@
+body {
+  background-color: teal;
+}
+
+/* ========== MIN-WIDTH & MAX-WIDTH ========== */
+/* 
+  400px + 
+*/
+/* @media (min-width: 400px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* 
+  768px + 
+*/
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* 
+0px - 1199px
+*/
+/* @media (max-width: 1199px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* 
+0px - 767px
+*/
+/* @media (max-width: 767px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* 600px */
+/* @media (width: 600px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* ========== AND ========== */
+
+/* 
+768px + true
+0px - 1199px true
+*/
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* ========== OR ========== */
+/* 
+0px - 767px false
+1200px + false
+*/
+
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* ========== TYPES ========== */
+/* 
+  all
+  screen 
+  print
+*/
+
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* @media print {
+  .page-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .page-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .main-title {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+} */
+
+/* ========== ORIENTATION ========== */
+/* @media screen and (orientation: portrait) {
+  body {
+    background-color: tomato;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */

@@ -14,7 +14,19 @@
 
   <body>
     <div class="container">
-      <img src="../images/retina-w/img-mobile.jpg" alt="retina picture" />
+      <img
+        srcset="
+          ../images/retina-w/img-desktop.jpg    270w,
+          ../images/retina-w/img-desktop@2x.jpg 540w,
+          ../images/retina-w/img-tablet.jpg     330w,
+          ../images/retina-w/img-tablet@2x.jpg  660w,
+          ../images/retina-w/img-mobile.jpg     418w,
+          ../images/retina-w/img-mobile@2x.jpg  836w
+        "
+        sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (max-width: 767px) 418px"
+        src="../images/retina-w/img-mobile.jpg"
+        alt="retina picture"
+      />
     </div>
   </body>
 </html>
